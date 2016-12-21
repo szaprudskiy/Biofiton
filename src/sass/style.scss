@@ -1,3 +1,5 @@
+@import "variables";
+
 *{padding: 0; margin: 0; outline: none}
 ul{list-style-type: none}
 a{text-decoration: none; -webkit-transition: .35s;
@@ -16,6 +18,15 @@ html, body{
 	font: 16px 'RobotoRegular', sans-serif;
 	overflow-x: hidden;
 }
+.main-title{
+	color: $color-grey;
+	font-family: "RobotoBold";
+	font-size: 30px; 
+	text-transform: uppercase;
+}
+.main-title--sub{
+	font-family: "Roboto-Thin";
+}
 .container{
 	width: 100%;
 	height: 100%;
@@ -28,6 +39,8 @@ html, body{
 			display: block;
 		}
 }
+
+/* MAIN-1 */
 .main-1{
 	text-align: center;
 	background: url(../img/main1-bg.png) no-repeat;
@@ -45,4 +58,21 @@ html, body{
 	width: 233px;
 	margin: 69px auto 0;
 	font-size: 14px;
+}
+
+/* MAIN-2 */
+.main-2{
+	text-align: center;
+	padding-top: 98px;
+	.map{
+		margin-top: 75px;
+	}
+	.holder-text{
+		display: flex;
+		justify-align: space-between;
+		p{
+			width: 370px;
+			color: $color-grey;
+		}
+	}
 }
