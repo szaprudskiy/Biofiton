@@ -15,18 +15,18 @@ button{
 	transition: .35s;
 }
 html, body{
-	font: 16px 'RobotoRegular', sans-serif;
-	overflow-x: hidden;
+	font: $main-font;
 }
 .main-title{
 	color: $color-grey;
-	font-family: "RobotoBold";
+	font-family: $robotobold;
 	font-size: 30px; 
 	text-transform: uppercase;
 }
 .main-title--sub{
-	font-family: "Roboto-Thin";
+	font-family: $robotothin;
 }
+
 .container{
 	width: 100%;
 	height: 100%;
@@ -68,11 +68,62 @@ html, body{
 		margin-top: 75px;
 	}
 	.holder-text{
-		display: flex;
-		justify-align: space-between;
+		margin-top: 26px;
+		display: -webkit-box;
+	    display: flex;
+		justify-content: space-between;
 		p{
 			width: 370px;
 			color: $color-grey;
 		}
+	}
+}
+
+/* MAIN-3 */
+.main-3{
+	text-align: center;
+	padding-top: 141px;
+	.holder-img{
+		margin-top: 80px;
+		display: -webkit-box;
+	    display: flex;
+	    justify-content: space-between;
+	    &__item{
+	    	position: relative;
+	    }
+	    &__description{
+	    	
+	    	position: absolute;
+	    	top: 72%;
+	    	margin-top: 3px;
+	    	background: #516877;
+	    	width: 100%;
+	    	opacity: .7;
+	    	text-align: left;
+	    }
+	    &__inner{
+	    	padding: 20px 0 20px 24px;
+	    }
+	    &__title{
+	    	color: #fff;
+			font-family: $robotobold;
+			font-size: 22px;
+	    }
+	    &__title--font{
+	    	font-family: $robotothin;
+	    }
+	}
+}
+
+/* MAIN-4 */
+.main-4{
+	text-align: center;
+	&__img{
+		position: absolute;
+		left: -158px;
+	}
+	&__text{
+		position: absolute;
+		width: 815px;
 	}
 }
