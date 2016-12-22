@@ -16,6 +16,10 @@ button{
 }
 html, body{
 	font: $main-font;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+
 }
 .main-title{
 	color: $color-grey;
@@ -117,13 +121,163 @@ html, body{
 
 /* MAIN-4 */
 .main-4{
-	text-align: center;
+	padding-top: 108px;
+	margin-bottom: 175px;
+	.main-title{
+		text-align: center;
+	}
 	&__img{
 		position: absolute;
 		left: -158px;
+		top: 40px;
+		opacity: .4;
 	}
 	&__text{
+		padding-top: 80px;
 		position: absolute;
-		width: 815px;
+		width:770px;
+		p{
+			padding-bottom: 33px;
+		}
+	}
+	&__right{
+		float: right;
+		width: 400px;
+	}
+}
+/* BIOFIT CLIENT DATA*/
+.biofit-client{
+	border-bottom: 1px solid #ccc;
+	flex: 1;
+	display: flex;
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+	&__left{
+		margin-right: 130px;
+	}
+	&__right{
+		border-left: 1px solid #ccc;
+		padding-left: 130px;
+	}
+	&__sub-text{
+		color: #3e3e3e;
+		font-family: $robotobold;
+		font-size: 18px;
+		text-transform: uppercase;
+		margin: 20px 0;
+
+	}
+	&__link{
+		width: 200px;
+		max-width: 100%;
+		float: left;
+		text-align: center;
+		color: #fff;
+		display: block;
+		background: #009247;
+		padding: 15px 0;
+		border-radius: 50px;
+	}
+	&__link_text{
+		margin: 4px 0 55px 30px;
+		color: #545454;
+		float: left;
+		p{
+			font-family: $robotothin;
+		}
+		span{
+			font-family: $robotobold;
+		}
+	}
+}
+
+.biofit-client-2{
+	text-align: center;
+	text-transform: uppercase;
+	color: #3e3e3e;
+	font-size: 18px;
+	font-family: $robotobold;
+	margin: 63px 0 58px;
+}
+
+/* FOOTER */
+.footer{
+	display: flex;
+	flex-wrap: wrap;
+	background: #3c464d;
+	padding: 50px 0 32px;
+	.main-title{
+		text-align: center;
+		color: #fff;
+	}
+	.main-title--sub{
+		padding-left: 10px;
+	}
+	&__left{
+		width: 800px;
+		float: left;
+		margin-top: 40px;
+	}
+	&__input{
+		background: #d8dadb;
+		border-radius: 50px;
+		border:none;
+		width: 570px;
+		color: #6b6b6b;
+		margin-right: 15px;
+		padding: 20px 0 20px 30px;
+		&::-webkit-input-placeholder{
+			color: #6b6b6b;
+		}
+	}
+	&__button{
+		background: #607584;
+		color: #fff;
+		text-transform: uppercase;
+		width: 180px;
+		border:none;
+		padding: 16px 0;
+		vertical-align: bottom;
+		font-size: 18px;
+		cursor: pointer;
+		border-radius: 50px;
+		font-family: $robotobold;
+		&:hover{
+			background: #7a91a1;
+		}
+	}
+	&__right{
+		margin-top: 40px;
+		float: right;
+	}
+	&__social-item{
+		display: inline-block;
+		margin-left: 10px;
+		&:first-child{
+			margin: 0;
+		}
+	}
+	&__social-link{
+		display: block;
+		background: url(../img/footer-social.png) no-repeat;
+		width: 55px;
+		height: 55px;
+	}
+	&__facebook{
+		background-position: -75px 0;
+	}
+	&__inst{
+		background-position: -150px 0;
+	}
+	&__copy{
+		padding-top: 86px;
+		clear: both;
+		display: flex;
+		align-items: center;
+	}
+	&__copy-text{
+		color: #c8c8c8;
+		padding-left: 40px;
 	}
 }
