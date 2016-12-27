@@ -15,6 +15,23 @@ button{
 	transition: .35s;
 }
 html, body{
+	font: 16px 'RobotoRegular';
+/* 	overflow-x: hidden; */
+}
+.title{
+	font-size: 18px;
+	font-family: "RobotoBold";
+	text-transform: uppercase;
+}
+
+.main-title{
+	color: $color-grey;
+	font-family: "RobotoBold";
+	font-size: 30px; 
+	text-transform: uppercase;
+}
+.main-title--sub{
+	font-family: "Roboto-Thin";
 	font: $main-font;
 	display: flex;
 	min-height: 100vh;
@@ -71,12 +88,256 @@ html, body{
 			display: block;
 		}
 }
+.btn{
+	padding: 11px 0;
+	width: 210px;
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+	background-color: #009247;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	display: block;
+	&:hover{
+		background-color: #00af55;
+	}
+}
+/* =========header========== */
+.header{
+	padding-top: 30px;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	font-size: 14px;
+	-webkit-align-items: flex-start;
+	align-items: flex-start;
+	&__left{
+		display: -webkit-flex;
+		display: flex;
+	}
+
+	&__logo{
+		padding-right: 55px;
+	}
+
+	&__right{
+		display: -webkit-flex;
+		display: flex;
+		-webkit-align-items: flex-start;
+		align-items: flex-start;
+	}
+
+	.jq-selectbox{
+			margin: 0 5px;
+			background-color: transparent;
+			margin-top: -10px;
+			&.opened{
+				background-color: $header-form-color;
+				border-radius: 21px;
+				.jq-selectbox__dropdown{
+				}
+			}
+	}
+	.jq-selectbox__dropdown{
+			position: static !important;
+			cursor: pointer;
+			padding: 0 10px;
+			padding-bottom: 15px;
+			li{
+				padding: 3px 0;
+				&:hover{
+					color: #949489;
+				}
+			}
+	}
+
+	.jq-selectbox__trigger-arrow{
+		background-image: url(../img/sel-ar.png);
+		position: absolute;
+		width: 9px;
+		height: 6px;
+		right: 14px;
+		top: 17px;
+	}
+
+	.jq-selectbox__trigger-text{
+			padding-right: 20px;	
+			display: block;
+	}
+	.jq-selectbox__select{
+			padding: 10px;
+			padding-bottom: 5px;
+			padding-right:30px;
+			cursor: pointer;
+	}
+
+	&__login{
+		color: #008c45;
+		padding-left: 15px;
+		display: block;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+
+	&__select{
+		z-index: -1;
+	}
+
+	&__logout{
+		padding: 10px;
+		margin-top: -10px;
+		border-radius: 21px;
+		margin-left: 15px;
+		display: none;
+		a{
+			display: block;
+		} 
+		.name{
+			color: #404040;
+			padding-right: 20px;
+			&:before{
+
+			}
+		}
+		.logout{
+			font-size: 0px;
+			color: #ff4200;
+			text-align: center;
+			padding-top: 10px;
+		}
+
+		&:hover{
+			background-color: #d3e8f6;
+			.logout{
+				font-size: inherit;
+			}
+		}
+	}
+
+	&__basket{
+		padding-left: 25px;
+		.summ{
+			display: inline-block;	
+			position: relative;
+			top: -5px;
+			padding-right: 5px;
+		}
+		a{
+			display: inline-block;
+			position: relative;
+			span{
+				display: block;
+				width: 15px;
+    		height: 14px;
+				position: absolute;
+				top: -7px;
+   			left: -4px;
+				background-color: #ff4200;
+				border-radius: 15px;
+				text-align: center;
+				color: #fff;
+				font-size: 10px;
+			}
+		}
+	}
+
+}
+
+.nav{
+
+	&__item{
+		padding: 0 12px ;
+		display: inline-block;
+	}
+
+	&__link{
+		padding:  5px 3px 18px;
+		color: $color-grey;
+		transition: 0s;
+		&:hover{
+			color: #737373;
+			border-bottom: 2px solid #737373;
+		}
+	}
+}
+
+.search{
+	padding: 9px 15px 7px;
+	padding-right: 15px;
+	margin-top: -7px;
+	border-radius: 30px;
+	input{
+		width: 0px;
+		border: none;
+		outline: none;
+		position: relative;
+		top: -2px;
+		transition: .15s ease-out;
+		transition-delay: .3s;
+		-webkit-transition-property: width;
+    transition-property: width;
+    -webkit-appearance: none;
+    appearance: none;
+	}
+
+	&:hover{
+		background-color: $header-form-color;
+		input{
+				width: 200px;
+				background-color: transparent;
+		}
+		
+		.search__link:before{
+			 background-color: rgb(227, 243, 251);
+		}
+	}
+
+	&__link{
+		position: relative;
+		background-color: transparent;
+		&:before{
+			content: '';
+				display: block;
+	    width: 14px;
+	    height: 15px;
+	    position: absolute;
+	    left: -15px;
+	    top: 1px;
+		}
+	}
+}
+/* =======banner========== */
+.banner{
+	height: 471px;
+	background-image: url("../img/banner.jpg");
+	background-position: center ;
+	background-repeat: no-repeat;
+	background-color: #d5dfe9;
+
+	&__title{
+		color: #5a5a5a;
+		font-size: 45px;
+		text-transform: uppercase;
+		padding-top: 18.4%;
+	}
+
+	&__text{
+		width: 310px;
+		color: #5a5a5a;
+		padding-top: 17px;
+	}
+}
 
 /* MAIN-1 */
 .main-1{
 	text-align: center;
 	background: url(../img/main1-bg.png) no-repeat;
 	padding: 46px 0 0;
+	border-bottom: 2px solid #009247;
 }
 .logo{
 	&__sub-title{
@@ -91,6 +352,103 @@ html, body{
 	margin: 69px auto 0;
 	font-size: 14px;
 }
+
+
+.kind{
+	padding-top: 35px;
+	&__line{
+		width: 68%;
+		margin: 0 auto;
+		border-bottom: 1px solid #dbdece;
+		opacity: 0.5;
+	}
+	
+	&__body{
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-pack: justify;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+		padding: 0 73px;
+	}
+	&__item{
+		width: 230px;
+		color: #525252;
+		opacity: .5;
+		&:hover{
+			color: #009247;
+			opacity: 1;
+			.kind__round{
+				border-color: #c6e6c4;
+				&:after{
+					opacity: .5;
+				}
+			}
+			.kind__img1{
+				background-image: url("../img/icon-customer-x.png");
+			}
+
+			.kind__img2{
+				background-image: url("../img/icon-farmaceutical-h.png");
+			}
+
+			.kind__img3{
+				background-image: url("../img/farmacy-h.png");
+			}
+			.btn{
+				margin: 55px auto 45px;
+				visibility: visible;
+			}
+		}
+	}
+
+	&__round{
+		width: 13px;
+		height: 13px;
+		box-sizing: border-box;
+		border-radius: 9px;
+		border: 3px solid #dbdece;
+		margin: 0 auto;
+		margin-top: 17px;
+		position: relative;
+		&:after{
+			height: 20px;
+			width: 1px;
+			content: '';
+			position: absolute;
+			background-color: #dbdece;
+			top: -20px;
+			left: 3px;
+		}
+
+		&--long{
+			&:after{
+				height: 40px;
+				top: -40px;
+			}
+		}
+	}
+
+	&__img1{
+		background-image: url("../img/icon-customer.png");
+	}
+
+	&__img2{
+		background-image: url("../img/icon-farmaceutical.png");
+	}
+
+	&__img3{
+		background-image: url("../img/farmacy.png");
+	}
+
+	.btn{
+		margin: 55px auto 45px;
+		visibility: hidden;
+		transition: 0s;
+	}
+}
+
+
 
 /* MAIN-2 */
 .main-2{
@@ -341,6 +699,104 @@ html, body{
 		font-family: $robotolight;
 		color: $color-grey;
 		padding-right: 20px;
+
+	}
+}
+
+
+
+/* ========choise======= */
+.choise{
+	padding-top: 17px;
+	padding-bottom: 120px;
+	&__item{
+		display: block;
+		text-align: center;
+		padding-top: 80px;
+		padding-bottom: 60px;
+		width: 267px;
+		color: #009247;
+		margin:0 10px;
+		transition-property: color;
+		&:hover{
+			background-image: url("../img/choise-hov.png");
+			color: #fff;
+			-webkit-box-shadow: 0px 86px 127px -83px rgba(0,0,0,0.7);
+			-moz-box-shadow: 0px 86px 127px -83px rgba(0,0,0,0.7);
+			box-shadow: 0px 86px 127px -83px rgba(0,0,0,0.7);
+			.heart{
+				background-image: url("../img/icon-heart-h.png");
+			}
+			.kidney{
+				background-image: url("../img/icon-kidney-h.png");
+			}
+			.joints{
+				background-image: url("../img/icon-joints-h.png");
+			}
+			.liver{
+				background-image: url("../img/icon-liver-h.png");
+			}
+			.stomach{
+				background-image: url("../img/icon-stomach-h.png");
+			}
+			.vessels{
+				background-image: url("../img/icon-vessels-h.png");
+			}
+			.nerves{
+				background-image: url("../img/icon-nerves-h.png");
+			}
+		}
+	}
+	&__name{
+		padding-top: 15px;
+		text-transform: uppercase;
+		font-family: "RobotoBold";
+		font-size: 24px;
+		span{
+			font-family: "Roboto-Thin";
+		}
+	}
+
+	&__top{
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-webkit-box-pack: justify;
+		-webkit-justify-content: center;
+		justify-content: center;
+	}
+
+	&__img{
+		height:115px;
+		text-align: center;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	
+	.heart{
+		background-image: url("../img/icon-heart.png");
+	}
+	.kidney{
+		background-image: url("../img/icon-kidney.png");
+	}
+	.joints{
+		background-image: url("../img/icon-joints.png");
+	}
+	.liver{
+		background-image: url("../img/icon-liver.png");
+	}
+	.stomach{
+		background-image: url("../img/icon-stomach.png");
+	}
+	.vessels{
+		background-image: url("../img/icon-vessels.png");
+	}
+	.nerves{
+		background-image: url("../img/nerves.png");
 	}
 }
 
@@ -551,3 +1007,4 @@ html, body{
 		padding-left: 40px;
 	}
 }
+
