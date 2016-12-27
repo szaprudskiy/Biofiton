@@ -32,7 +32,50 @@ html, body{
 }
 .main-title--sub{
 	font-family: "Roboto-Thin";
+	font: $main-font;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+
 }
+.main-title{
+	color: $color-grey;
+	font-family: $robotobold;
+	font-size: 30px; 
+	text-transform: uppercase;
+}
+.main-title--sub{
+	font-family: $robotothin;
+}
+.hide-text{
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	z-index: 10;
+	color: #fff;
+	padding: 0 20px;
+}
+.hide-text-s{
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	z-index: 10;
+	color: #fff;
+	padding: 0 20px;
+}
+.hide-text-t{
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	z-index: 10;
+	color: #fff;
+	padding: 0 20px;
+}
+
+
 .container{
 	width: 100%;
 	height: 100%;
@@ -310,6 +353,7 @@ html, body{
 	font-size: 14px;
 }
 
+
 .kind{
 	padding-top: 35px;
 	&__line{
@@ -404,6 +448,8 @@ html, body{
 	}
 }
 
+
+
 /* MAIN-2 */
 .main-2{
 	text-align: center;
@@ -412,14 +458,251 @@ html, body{
 		margin-top: 75px;
 	}
 	.holder-text{
-		display: flex;
-		justify-align: space-between;
+		margin-top: 26px;
+		display: -webkit-box;
+	    display: flex;
+		justify-content: space-between;
 		p{
 			width: 370px;
 			color: $color-grey;
 		}
 	}
 }
+
+/* MAIN-3 */
+.main-3{
+	text-align: center;
+	padding-top: 141px;
+	.holder-img{
+		margin-top: 80px;
+		display: -webkit-box;
+	    display: flex;
+	    justify-content: space-between;
+	    &__item{
+	    	position: relative;
+	    }
+	    &__description{
+	    	position: absolute;
+	    	top: 72%;
+	    	margin-top: 3px;
+	    	background: #516877;
+	    	width: 100%;
+	    	opacity: .7;
+	    	text-align: left;
+	    }
+	    &__inner{
+	    	padding: 20px 0 20px 24px;
+	    }
+	    &__title{
+	    	color: #fff;
+			font-family: $robotobold;
+			font-size: 22px;
+	    }
+	    &__title--font{
+	    	font-family: $robotothin;
+	    }
+	}
+}
+
+/* MAIN-4 */
+.main-4{
+	padding-top: 108px;
+	margin-bottom: 175px;
+	.main-title{
+		text-align: center;
+	}
+	&__img{
+		position: absolute;
+		left: -158px;
+		top: 40px;
+		opacity: .4;
+	}
+	&__text{
+		padding-top: 80px;
+		position: absolute;
+		width:770px;
+		p{
+			padding-bottom: 33px;
+		}
+	}
+	&__right{
+		float: right;
+		width: 400px;
+	}
+}
+/* BIOFIT CLIENT DATA*/
+.biofit-client{
+	border-bottom: 1px solid #ccc;
+	flex: 1;
+	display: flex;
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+	&__left{
+		margin-right: 130px;
+	}
+	&__right{
+		border-left: 1px solid #ccc;
+		padding-left: 130px;
+	}
+	&__sub-text{
+		color: #3e3e3e;
+		font-family: $robotobold;
+		font-size: 18px;
+		text-transform: uppercase;
+		margin: 20px 0;
+
+	}
+	&__link{
+		width: 208px;
+		max-width: 100%;
+		float: left;
+		text-align: center;
+		color: #fff;
+		display: block;
+		background: #009247;
+		padding: 15px 0;
+		border-radius: 50px;
+	}
+	&__link_text{
+		margin: 4px 0 55px 30px;
+		color: #545454;
+		float: left;
+		p{
+			font-family: $robotothin;
+		}
+		span{
+			font-family: $robotobold;
+		}
+	}
+}
+
+.biofit-client-2{
+	text-align: center;
+	text-transform: uppercase;
+	color: #3e3e3e;
+	font-size: 18px;
+	font-family: $robotobold;
+	margin: 63px 0 58px;
+}
+
+/* ORDER*/
+.order{
+	.order-left{
+		border-right: 1px solid #ccc;
+		width: 470px;
+		float: left;
+		padding-bottom: 200px;
+		&__title{
+			font-size: 30px;
+			font-weight: normal;
+			text-transform: uppercase;
+			color: #404040;
+			margin-bottom: 32px;
+		}
+		&__input{
+			width: 370px;
+			border-radius: 50px;
+			text-indent: 20px;
+			border: none;
+			background: #dee2e5;;
+			height: 42px;
+			color: #6b6b6b;
+			margin-bottom: 10px;
+			&:last-child{
+				margin-bottom: 0;
+			}	
+		}
+		&__input--red:focus{
+			border: 1px solid #ff0000;
+		}
+		&__input--green:focus{
+			border: 1px solid #009247;
+		}
+	}
+	.order-right{
+		width: 600px;
+		float: left;
+		&__pad{
+			padding-left: 100px;
+		}
+		&__cost{
+			clear: both;
+			padding: 20px 0 15px;
+			border-bottom: 1px solid #ccc;
+			tr{
+				td{
+					padding-right:30px ;
+				}
+			}
+		}
+		&__cost-light{
+			font-family: $robotolight;
+			color: $color-grey;
+		}
+		&__cost-bold{
+			font-family: $robotobold;
+			color: $color-grey;
+		}
+		&__cost-pad{
+			padding-bottom: 15px;
+		}
+		&__title{
+			font-family: $robotolight;
+			color: $color-grey;
+		}
+		&__title--bold{
+			font-family: $robotobold;
+			font-size: 18px;
+			margin-bottom: 30px;
+		}
+		&__sum{
+			font-family: $robotolight;
+			color: $color-grey;
+			padding: 15px 0 0;
+			span{
+				color: #009247;
+				font-size: 30px;
+				font-family: $robotobold;
+				padding-left: 30px;
+			}
+		}
+
+
+	}
+	
+}
+.biofit-client__sub-text--mar{
+	margin: 20px 0;
+}
+.cost-product{
+	margin: 50px 0 0;
+	p{
+		font-family: $robotolight;
+		color: $color-grey;
+	}
+	&__holder{
+		margin: 15px 0 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+	}
+	&__next{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		align-items: center;
+		margin: 50px 0;
+	}
+	&__next-text{
+		font-family: $robotolight;
+		color: $color-grey;
+		padding-right: 20px;
+
+	}
+}
+
 
 
 /* ========choise======= */
@@ -514,6 +797,214 @@ html, body{
 	}
 	.nerves{
 		background-image: url("../img/nerves.png");
+	}
+}
+
+
+
+/* BIOFIT ITEM CARD*/
+.biofit-item-card{
+	margin-bottom: 90px;
+	&__img{
+		text-align: center;
+	}
+	&__left{
+		width: 500px;
+		float: left;
+	}
+	&__table{
+		margin-top: 50px;
+		table{
+			color: #3e3e3e;
+			border-spacing: 0;
+			width: 100%;
+			text-align: center;
+			font-size: 14px;
+			thead{
+				background: #fdf400;
+				color: #3e3e3e;
+				font-family: $robotobold;
+				font-size: 14px;
+
+			}
+			tr{
+				td{
+					padding: 20px 10px;
+					width: 50px;
+				}
+			}
+		}
+		&_bold{
+			font-family: $robotobold;
+		}
+		&_bg-row{
+			background: #f1f1f1;
+		}
+		&_text-left{
+			text-align: left;
+		}
+		&_width{
+			width:100%;
+		}
+		&_pad{
+			padding: 20px 10px;
+			color: #3e3e3e;
+			font-size: 14px;
+
+			span{
+				font-family: $robotobold;
+				padding-right: 8px;
+			}
+		}
+	}
+	
+	&__right{
+		float: right;
+		width: 570px;
+	}
+	&__title{
+		font-size: 30px;
+		color: #404040;
+		font-weight: normal;
+	}
+	&__sub-title{
+		color: #ababab;
+		font-size: 18px;
+	}
+	&__dose{
+		clear: both;
+		margin-top: 110px;
+	}
+	&__description{
+		margin: 40px 0 0 40px;
+		&_title{
+			color: #3e3e3e;
+			font-size: 18px;
+			font-family: $robotobold;
+		}
+		ul{	
+			margin: 40px 0 0;
+			li{
+				color: #545454;
+				font-family: $robotolight;
+				position: relative;
+				margin-bottom: 20px;
+				&:before{
+					content: "";
+					position: absolute;
+					background: url(../img/icon-follow.png) no-repeat;
+					width: 20px;
+					height: 20px;
+					left: -40px;
+    				top: 12px;
+				}
+				&:last-child{
+					margin: 0;
+				}
+				p{
+					font-size: 14px;
+					margin-top: 5px;
+				}
+			}
+		}
+		&_sub{
+			color: #717171;
+			font-size: 18px;
+			text-transform: uppercase;
+			margin: 40px 0;	
+		}
+	}
+	&__under-text{
+		color: #3e3e3e;
+	}
+}
+
+
+.biofit-client__link--cart{
+    background: #009247 url(../img/cart-white.png) no-repeat;
+    background-position: 20px 15px;
+    margin-top: 40px;
+}
+
+
+/* FOOTER */
+.footer{
+	display: flex;
+	flex-wrap: wrap;
+	background: #3c464d;
+	padding: 50px 0 32px;
+	.main-title{
+		text-align: center;
+		color: #fff;
+	}
+	.main-title--sub{
+		padding-left: 10px;
+	}
+	&__left{
+		width: 800px;
+		float: left;
+		margin-top: 40px;
+	}
+	&__input{
+		background: #d8dadb;
+		border-radius: 50px;
+		border:none;
+		width: 570px;
+		color: #6b6b6b;
+		margin-right: 15px;
+		padding: 20px 0 20px 30px;
+		&::-webkit-input-placeholder{
+			color: #6b6b6b;
+		}
+	}
+	&__button{
+		background: #607584;
+		color: #fff;
+		text-transform: uppercase;
+		width: 180px;
+		border:none;
+		padding: 16px 0;
+		vertical-align: bottom;
+		font-size: 18px;
+		cursor: pointer;
+		border-radius: 50px;
+		font-family: $robotobold;
+		&:hover{
+			background: #7a91a1;
+		}
+	}
+	&__right{
+		margin-top: 40px;
+		float: right;
+	}
+	&__social-item{
+		display: inline-block;
+		margin-left: 10px;
+		&:first-child{
+			margin: 0;
+		}
+	}
+	&__social-link{
+		display: block;
+		background: url(../img/footer-social.png) no-repeat;
+		width: 55px;
+		height: 55px;
+	}
+	&__facebook{
+		background-position: -75px 0;
+	}
+	&__inst{
+		background-position: -150px 0;
+	}
+	&__copy{
+		padding-top: 86px;
+		clear: both;
+		display: flex;
+		align-items: center;
+	}
+	&__copy-text{
+		color: #c8c8c8;
+		padding-left: 40px;
 	}
 }
 
