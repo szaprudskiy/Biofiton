@@ -30,6 +30,34 @@ html, body{
 .main-title--sub{
 	font-family: $robotothin;
 }
+.hide-text{
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	z-index: 10;
+	color: #fff;
+	padding: 0 20px;
+}
+.hide-text-s{
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	z-index: 10;
+	color: #fff;
+	padding: 0 20px;
+}
+.hide-text-t{
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	z-index: 10;
+	color: #fff;
+	padding: 0 20px;
+}
+
 
 .container{
 	width: 100%;
@@ -96,7 +124,6 @@ html, body{
 	    	position: relative;
 	    }
 	    &__description{
-	    	
 	    	position: absolute;
 	    	top: 72%;
 	    	margin-top: 3px;
@@ -169,7 +196,7 @@ html, body{
 
 	}
 	&__link{
-		width: 200px;
+		width: 208px;
 		max-width: 100%;
 		float: left;
 		text-align: center;
@@ -200,6 +227,249 @@ html, body{
 	font-family: $robotobold;
 	margin: 63px 0 58px;
 }
+
+/* ORDER*/
+.order{
+	.order-left{
+		border-right: 1px solid #ccc;
+		width: 470px;
+		float: left;
+		padding-bottom: 200px;
+		&__title{
+			font-size: 30px;
+			font-weight: normal;
+			text-transform: uppercase;
+			color: #404040;
+			margin-bottom: 32px;
+		}
+		&__input{
+			width: 370px;
+			border-radius: 50px;
+			text-indent: 20px;
+			border: none;
+			background: #dee2e5;;
+			height: 42px;
+			color: #6b6b6b;
+			margin-bottom: 10px;
+			&:last-child{
+				margin-bottom: 0;
+			}	
+		}
+		&__input--red:focus{
+			border: 1px solid #ff0000;
+		}
+		&__input--green:focus{
+			border: 1px solid #009247;
+		}
+	}
+	.order-right{
+		width: 600px;
+		float: left;
+		&__pad{
+			padding-left: 100px;
+		}
+		&__cost{
+			clear: both;
+			padding: 20px 0 15px;
+			border-bottom: 1px solid #ccc;
+			tr{
+				td{
+					padding-right:30px ;
+				}
+			}
+		}
+		&__cost-light{
+			font-family: $robotolight;
+			color: $color-grey;
+		}
+		&__cost-bold{
+			font-family: $robotobold;
+			color: $color-grey;
+		}
+		&__cost-pad{
+			padding-bottom: 15px;
+		}
+		&__title{
+			font-family: $robotolight;
+			color: $color-grey;
+		}
+		&__title--bold{
+			font-family: $robotobold;
+			font-size: 18px;
+			margin-bottom: 30px;
+		}
+		&__sum{
+			font-family: $robotolight;
+			color: $color-grey;
+			padding: 15px 0 0;
+			span{
+				color: #009247;
+				font-size: 30px;
+				font-family: $robotobold;
+				padding-left: 30px;
+			}
+		}
+
+
+	}
+	
+}
+.biofit-client__sub-text--mar{
+	margin: 20px 0;
+}
+.cost-product{
+	margin: 50px 0 0;
+	p{
+		font-family: $robotolight;
+		color: $color-grey;
+	}
+	&__holder{
+		margin: 15px 0 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+	}
+	&__next{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		align-items: center;
+		margin: 50px 0;
+	}
+	&__next-text{
+		font-family: $robotolight;
+		color: $color-grey;
+		padding-right: 20px;
+	}
+}
+
+
+
+/* BIOFIT ITEM CARD*/
+.biofit-item-card{
+	margin-bottom: 90px;
+	&__img{
+		text-align: center;
+	}
+	&__left{
+		width: 500px;
+		float: left;
+	}
+	&__table{
+		margin-top: 50px;
+		table{
+			color: #3e3e3e;
+			border-spacing: 0;
+			width: 100%;
+			text-align: center;
+			font-size: 14px;
+			thead{
+				background: #fdf400;
+				color: #3e3e3e;
+				font-family: $robotobold;
+				font-size: 14px;
+
+			}
+			tr{
+				td{
+					padding: 20px 10px;
+					width: 50px;
+				}
+			}
+		}
+		&_bold{
+			font-family: $robotobold;
+		}
+		&_bg-row{
+			background: #f1f1f1;
+		}
+		&_text-left{
+			text-align: left;
+		}
+		&_width{
+			width:100%;
+		}
+		&_pad{
+			padding: 20px 10px;
+			color: #3e3e3e;
+			font-size: 14px;
+
+			span{
+				font-family: $robotobold;
+				padding-right: 8px;
+			}
+		}
+	}
+	
+	&__right{
+		float: right;
+		width: 570px;
+	}
+	&__title{
+		font-size: 30px;
+		color: #404040;
+		font-weight: normal;
+	}
+	&__sub-title{
+		color: #ababab;
+		font-size: 18px;
+	}
+	&__dose{
+		clear: both;
+		margin-top: 110px;
+	}
+	&__description{
+		margin: 40px 0 0 40px;
+		&_title{
+			color: #3e3e3e;
+			font-size: 18px;
+			font-family: $robotobold;
+		}
+		ul{	
+			margin: 40px 0 0;
+			li{
+				color: #545454;
+				font-family: $robotolight;
+				position: relative;
+				margin-bottom: 20px;
+				&:before{
+					content: "";
+					position: absolute;
+					background: url(../img/icon-follow.png) no-repeat;
+					width: 20px;
+					height: 20px;
+					left: -40px;
+    				top: 12px;
+				}
+				&:last-child{
+					margin: 0;
+				}
+				p{
+					font-size: 14px;
+					margin-top: 5px;
+				}
+			}
+		}
+		&_sub{
+			color: #717171;
+			font-size: 18px;
+			text-transform: uppercase;
+			margin: 40px 0;	
+		}
+	}
+	&__under-text{
+		color: #3e3e3e;
+	}
+}
+
+
+.biofit-client__link--cart{
+    background: #009247 url(../img/cart-white.png) no-repeat;
+    background-position: 20px 15px;
+    margin-top: 40px;
+}
+
 
 /* FOOTER */
 .footer{
