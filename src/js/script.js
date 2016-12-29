@@ -9,7 +9,7 @@
 	};
 });
 console.log(1)*/
- $('.header__select').styler();
+ 
 $(function(){
 	var $itemFirst = $(".itemfirst");
 	var $itemSecond = $(".itemsecond");
@@ -44,7 +44,7 @@ $(function(){
 		$imgThird.css({"top": "72%", "height" : "26%", "margin-top": "3px"});
 		$(".hide-text-t").css("display", "none");
 	});
-
+$('.header__select').styler();
 
 	/*validation*/
 	$("#form").validate({
@@ -84,8 +84,18 @@ $(function(){
 		}
 	});
 	
-
-
-
 })
+	$(".kind__body").slick({
+		responsive: [
+		    {
+		      breakpoint: 743,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1,
+		        infinite: true,
+		        arrows: true
+		      }
+    		}
+    	]
+	})
 

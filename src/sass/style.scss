@@ -16,7 +16,7 @@ button{
 }
 html, body{
 	font: 16px 'RobotoRegular';
-/* 	overflow-x: hidden; */
+ 	overflow-x: hidden; 
 }
 .title{
 	font-size: 18px;
@@ -33,10 +33,6 @@ html, body{
 .main-title--sub{
 	font-family: "Roboto-Thin";
 	font: $main-font;
-	display: flex;
-	min-height: 100vh;
-	flex-direction: column;
-
 }
 .main-title{
 	color: $color-grey;
@@ -338,6 +334,7 @@ html, body{
 	background: url(../img/main1-bg.png) no-repeat;
 	padding: 46px 0 0;
 	border-bottom: 2px solid #009247;
+	background-size: cover;
 }
 .logo{
 	&__sub-title{
@@ -448,8 +445,6 @@ html, body{
 	}
 }
 
-
-
 /* MAIN-2 */
 .main-2{
 	text-align: center;
@@ -461,10 +456,14 @@ html, body{
 		margin-top: 26px;
 		display: -webkit-box;
 	    display: flex;
+	    flex-wrap: wrap;
 		justify-content: space-between;
 		p{
 			width: 370px;
 			color: $color-grey;
+		}
+		.mobile-img{
+			display: none;
 		}
 	}
 }

@@ -7,7 +7,10 @@
 	<meta name="keywords" content="">
 	<title></title>
 	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
 	<section class="main-1">
@@ -66,11 +69,17 @@
 			<p class="main-title">we are the best</p>
 			<p class="main-title main-title--sub">because</p>
 			<div class="map">
+			<picture>
+				<source srcset="img/map-mobile.png" media="(max-width: 743px)" >
 				<img src="img/map.png" alt="">
+			</picture>
+				
 			</div>
 			<div class="holder-text">
 				<p>Control feedstock, storage and processing of particular importance in the manufacture of pharmaceuticals from plant material due to their complex structure, of various nature, the large number of the established active ingredients are contained in small amounts.</p>
+				<p class="mobile-img"><img src="img/guarante-mobile.png" alt=""></p>
 				<p>The constancy of the quality of herbal drugs can be achieved only if the feed given accurate and detailed description, including in particular the identification of the applicable special botanical raw material. To assure uniform quality is also important to know the geographical source of vegetable raw materials and the conditions under which it was obtained</p>
+				<p class="mobile-img"><img src="img/leaf-mobile.png" alt=""></p>
 				<p>Quality control is not limited to laboratory work, he is involved in all decisions related to product quality. The underlying principle for the satisfactory performance of the pharmaceutical company's quality control department "Aim" is considered to be its independence from the production department</p>
 			</div>
 		</div>	
@@ -81,7 +90,11 @@
 			<p class="main-title main-title--sub">manufacture</p>
 			<div class="holder-img">
 				<div class="holder-img__item itemfirst">
+				<picture>
+					<source srcset="img/main-img01-mobile.png"  media="(max-width: 743px)" width="320px">
 					<img src="img/main-img01.png" width="370px" height="370px" alt="">
+				</picture>
+					
 					<div class="holder-img__description firstdescr">
 						<div class="holder-img__inner">
 							<p class="holder-img__title">soft medicinal forms</p>
@@ -118,14 +131,17 @@
 			<p class="main-title main-title--sub">innovative</p>
 			<p class="main-title ">cryotechnology</p>
 				<img class="main-4__img" src="img/snowflake.png" alt="">
-				<div class="main-4__text">
-					<p>The basis of the technology of "Biofitonov®" the principle cryo grinding - maximum grinding plant raw materials at low temperatures (about -1960C), so that opened a plant cell membrane (the principle cryomechanical plant activation).</p>
-					<p>low processing temperature does not allow the loss of essential oils, substances are destroyed by heating, it prevents natural oxidation. cryotech- also includes the effect of shock freezing, which allows you to stop the biochemical processes in the cell without disturbing them.</p>
-					<p>Cryo grinding provides recovery of all classes of substances (the water-soluble, fat-soluble, alcohol-soluble) are simultaneously and without the use of solvents, as opposed to traditional technologies. This leads to multiple bioavailability enhancement "Biofitonov®", lack of side effects and to maximize the pharmacological effect in the treatment and prevention of various diseases.</p>
-				</div>	
-				<div class="main-4__right">
-					<img src="img/icons-img.png" alt="">
+				<div class="main-4__mobile-text">
+					<div class="main-4__text">	
+						<p>The basis of the technology of "Biofitonov®" the principle cryo grinding - maximum grinding plant raw materials at low temperatures (about -1960C), so that opened a plant cell membrane (the principle cryomechanical plant activation).</p>
+						<p>low processing temperature does not allow the loss of essential oils, substances are destroyed by heating, it prevents natural oxidation. cryotech- also includes the effect of shock freezing, which allows you to stop the biochemical processes in the cell without disturbing them.</p>
+						<p>Cryo grinding provides recovery of all classes of substances (the water-soluble, fat-soluble, alcohol-soluble) are simultaneously and without the use of solvents, as opposed to traditional technologies. This leads to multiple bioavailability enhancement "Biofitonov®", lack of side effects and to maximize the pharmacological effect in the treatment and prevention of various diseases.</p>
+					</div>	
+					<div class="main-4__right">
+						<img src="img/icons-img.png" alt="">
+					</div>
 				</div>
+
 		</div>
 	</section>
 	<!-- FOOTER -->
@@ -150,6 +166,7 @@
 		</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>
