@@ -29,6 +29,8 @@
 		width: 15px;
 		height: 28px;
 		left: 15px;
+		position: absolute;
+		z-index: 10;
 	}
 	.slick-next{
 		background: url(../img/next.png);
@@ -47,6 +49,9 @@
 		.holder-text{
 			padding: 0 20px;
 		}
+		.main-2 .map {
+    		margin-top: 25px;
+		}
 	}
 	.mobile-img{
 		display: block !important;
@@ -56,21 +61,25 @@
 
 	/* MAIN-3 */
 	.main-3{
-		padding-top: 50px;
+		padding-top: 30px;
 		.holder-img__item:not(:first-child){
 			display: none;
-
+		}
+		.holder-img{
+			margin-top: 30px;
 		}
 	}
 
 	/* MAIN-4 */
 	.main-4{
+		padding-top: 30px;
 		margin-bottom: 0;
 		.main-4__mobile-text{
 			display: flex;
 		    flex-wrap: wrap;
 		    flex-direction: column-reverse;
 		    padding: 0 20px;
+		    text-align: center;
 		}
 		.main-4__img{
 			display: none;
@@ -78,6 +87,7 @@
 		.main-4__right{
 			float: none;
 			width: 0;
+			margin-top: 20px;
 		}
 		.main-4__text p {
     		padding-bottom: 25px;
@@ -120,5 +130,83 @@
 		&__copy-text{
 			padding: 10px 0 0;
 		}
+	}
+	/* CHOISE */
+	/* .banner{
+		display: none;
+	} */
+	.banner-mobile{
+		background: url(../img/banner-mobile.jpg);
+		height: 200px;
+	}
+	.choise{
+		padding: 25px 0 100px;
+	}
+	.choise__item{
+		padding: 0;
+	}
+	.slick-dots li button{
+		border: 3px solid #e1e1e0;
+		height: 13px;
+		width: 13px;
+		border-radius: 50px;
+	}
+	.slick-dots li button:hover, .slick-dots li button:focus{
+		border: 3px solid green;
+	}
+	.slick-dots{
+		bottom: -45px;
+	}
+	/* BIOFIT CLIENT */
+	.biofit-client{
+		border: none;
+		padding: 0 20px;
+		&__left{
+			margin: 0;
+			border-bottom: 1px solid #ccc;
+		}
+		&__right{
+			padding: 0;
+			border: none;
+			border-bottom: 1px solid #ccc;
+			width: 300px;
+		}
+		&__link_text{
+			margin-left: 10px;
+		}
+	}
+	.biofit-client-2{
+		padding: 0 20px;
+	}
+	/* BIOFFIT ITEM CARD */
+	.biofit-item-card{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		&__left{
+			max-width: 743px;
+			width: 100%;
+			float: none;
+		}
+		&__right{
+			float: none;
+			max-width: 743px;
+			width: 100%;
+			margin-top: 100%;
+		}
+		&__img{
+			position: absolute;
+			top: 0;
+			img{
+				max-width: 100%;
+				height: auto;
+			}
+			
+		}	
+	}
+	.biofit-direction{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
 	}
 }

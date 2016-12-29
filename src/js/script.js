@@ -99,3 +99,19 @@ $('.header__select').styler();
     	]
 	})
 
+	$(".choise__top").slick({
+		responsive: [
+		    {
+		      breakpoint: 743,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1,
+		        infinite: true,
+		        arrows: true,
+		        dots: true
+		      }
+    		}
+    	]
+	})
+
+
