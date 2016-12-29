@@ -32,4 +32,44 @@ $(function(){
 		$imgThird.css({"top": "72%", "height" : "26%", "margin-top": "3px"});
 		$(".hide-text-t").css("display", "none");
 	});
+
+	/*validation*/
+	$("#form").validate({
+		rules:{
+			firstname: {
+				required: true,
+				minlength: 6
+			},
+			surname: {
+				required: true,
+				minlength: 6
+			},
+			country: {
+				required: true,
+				minlength: 2
+			},
+			city: {
+				required: true,
+				minlength: 2
+			},
+			postcode: {
+				required: true,
+				minlength: 2
+			},
+			street: {
+				required: true,
+				minlength: 2
+			},
+			email: {
+				required: true,
+				email: true,
+				minlength: 2
+			}
+		},
+		messages:{
+			firstname: "Please enter a valid your firstname"
+		}
+	});
+	
+
 })

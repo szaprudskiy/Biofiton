@@ -15,14 +15,14 @@
 		<div class="container">
 			<div class="order-left">
 			<h3 class="order-left__title">Order</h3>
-				<form action="">
-					<input class="order-left__input order-left__input--green" type="text" placeholder="First name">
-					<input class="order-left__input order-left__input--red" type="text" placeholder="Surname">
-					<input class="order-left__input" type="text" placeholder="Country">
-					<input class="order-left__input" type="text" placeholder="City">
-					<input class="order-left__input" type="text" placeholder="Postcode">
-					<input class="order-left__input" type="text" placeholder="Street, house number">
-					<input class="order-left__input" type="E-mail" placeholder="E-mail">
+				<form action="" id="form">
+					<input class="order-left__input order-left__input--green" type="text" placeholder="First name" name="firstname">
+					<input class="order-left__input order-left__input--red" type="text" placeholder="Surname" name="surname"> 
+					<input class="order-left__input" type="text" placeholder="Country" name="country">
+					<input class="order-left__input" type="text" placeholder="City" name="city">
+					<input class="order-left__input" type="text" placeholder="Postcode" name="postcode">
+					<input class="order-left__input" type="text" placeholder="Street, house number" name="street">
+					<input class="order-left__input" type="email" placeholder="E-mail" name="email">
 				</form>
 			</div>
 			<div class="order-right">
@@ -95,6 +95,7 @@
 		</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
+	<script src="js/validate.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>

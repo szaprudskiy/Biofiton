@@ -246,6 +246,7 @@ html, body{
 			width: 370px;
 			border-radius: 50px;
 			text-indent: 20px;
+			position: relative;
 			border: none;
 			background: #dee2e5;;
 			height: 42px;
@@ -550,4 +551,72 @@ html, body{
 		color: #c8c8c8;
 		padding-left: 40px;
 	}
+}
+
+
+/* bread-crumbs */
+.bread-crumbs{
+	&__item{
+		display: inline-block;
+		margin-right: 10px;
+		}
+	&__link{
+		color: #ababab;
+		font-size: 12px;	
+	}
+	&__arr{
+		position: relative;
+		&:after{
+			content: "";
+			position: absolute;
+			background: url(../img/bread-crumbs-arr.png);
+			width: 4px;
+			height: 6px;
+			left: 52px;
+    		top: 6px;
+		}
+	}
+
+}
+
+
+/* validation */
+.error{
+	color: red;
+	font-size: 12px;
+}
+#firstname-error{
+	position: absolute;
+	left:21px;
+	top: 9%;
+}
+#surname-error{
+	position: absolute;
+	left:21px;
+	top: 17%;
+}
+#country-error{
+	position: absolute;
+	left:21px;
+	top: 25%; 
+}
+#city-error{
+	position: absolute;
+	left:21px;
+	top: 34%;
+}
+#postcode-error{
+	position: absolute;
+	left:21px;
+	top: 42%;
+}
+#street-error{
+	position: absolute;
+	left:21px;
+	top: 50%;
+}  
+#email-error{
+	position: absolute;
+	left:21px;
+	top: 59%;
 }
