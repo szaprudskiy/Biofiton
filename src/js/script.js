@@ -11,6 +11,17 @@
 console.log(1)*/
  
 $(function(){
+	var burgerItem = $(".burger__upper, .burger__mid, .burger__lower");
+ 		var menu = $(".mobile-menu");
+ 		var burger = $('.burger');
+
+	 	burger.on("click", function(){
+	  	menu.fadeToggle();
+	  	burgerItem.toggleClass('cliked'); 
+ 		})	
+
+
+
 	var $itemFirst = $(".itemfirst");
 	var $itemSecond = $(".itemsecond");
 	var $itemThird = $(".itemthird");
@@ -99,7 +110,7 @@ $('.header__select').styler();
     	]
 	})
 
-	$(".choise__top").slick({
+	$(".choice-slider").slick({
 		responsive: [
 		    {
 		      breakpoint: 743,
@@ -115,3 +126,4 @@ $('.header__select').styler();
 	})
 
 
+		

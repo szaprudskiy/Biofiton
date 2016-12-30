@@ -11,6 +11,101 @@
 	<link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
+ <header >
+ 	<div class="container">
+ 		<div class="header">
+ 			<div class="header__left">
+	 			<div class="header__logo">
+	 				<a href="">
+	 					<img src="img/logo_simple.png" alt="">
+	 				</a>
+	 			</div>
+	 			<nav class="nav">
+	 				<ul class="nav__list">
+	 					<li class="nav__item">
+	 						<a href="" class="nav__link">
+	 							About Us
+	 						</a>
+	 					</li>
+	 					<li class="nav__item">
+	 						<a href="" class="nav__link">
+	 							Delivery &#38; Payment
+	 						</a>
+	 					</li>
+	 					<li class="nav__item">
+	 						<a href="" class="nav__link">
+	 							Return
+	 						</a>
+	 					</li>
+	 					<li class="nav__item">
+	 						<a href="" class="nav__link">
+	 							Contacts
+	 						</a>
+	 					</li>
+	 				</ul>
+	 			</nav>
+	 			<div class="search">
+	 				<input type="search" placeholder="search">
+	 				<a href="#" class="search__link">
+	 					<img src="img/search.png" alt="">
+	 				</a>
+	 			</div>
+
+	 		</div>
+	 		<div class="burger">
+				<div class="burger__item">
+					<span class="burger__upper"></span>
+					<span class="burger__mid"></span>
+					<span class="burger__lower"></span>
+				</div>
+			</div>
+	 		<div class="header__right">
+	 				<select name="curr" id="" class="header__select">
+	 					<option value="uah">uah</option>
+	 					<option value="eur">eur</option>
+	 					<option value="usd">usd</option>
+	 				</select>
+	 				<select name="curr" id="" class="header__select">
+	 					<option value="uah">ru</option>
+	 					<option value="eur">pl</option>
+	 					<option value="usd">en</option>
+	 				</select>
+	 				<a href="#" class="header__login">
+	 					log in
+	 				</a>
+	 				<p class="header__logout">
+	 					<a href="#" class="name">Sergey K.</a>
+	 					<a href="#" class="logout">Log out</a>
+	 				</p>
+					<p class="header__basket">
+						<span class="summ">75 грн</span>
+						<a href="">
+							<img src="img/cart.png" alt="">
+							<span >2</span>
+						</a>
+
+					</p>
+	 		</div>
+	 		</div>	
+ 		</div>
+ 	</div>
+ </header>
+ 		<ul class="mobile-menu">
+ 			<li>
+ 				<p class="header__basket">
+					<span class="summ">75 грн</span>
+					<a href="">
+						<img src="img/cart.png" alt="">
+						<span >2</span>
+					</a>
+
+				</p>
+ 			</li>
+ 			<li><a href="#">About Us</a></li>
+ 			<li><a href="#">Delivery & Payment</a></li>
+ 			<li><a class="mobile-menu__mar" href="#">uah</a><a href="#" class="mobile-menu__mar">eur</a><a class="mobile-menu__mar" href="#">usd</a></li>
+ 			<li><a class="mobile-menu__mar" href="#">ru</a><a href="#" class="mobile-menu__mar">pl</a><a class="mobile-menu__mar" href="#">en</a></li>
+ 		</ul>
 	<!-- BIOFIT CLIENT DATA -->
 	<div class="container">
 		<section class="biofit-client">
@@ -25,12 +120,8 @@
 					</div>	
 					
 				</div>
-				<div class="biofit-client__right">
-					<picture>
-						<source srcset="img/biofiton-img2-mobile.png" media="(max-width: 743px)" >
+				<div class="biofit-client__right">	
 						<img src="img/biofiton-img2.png" alt="" height="243px">
-					</picture>
-					
 					<p class="biofit-client__sub-text">The usual course of treatment</p>
 					<a class="biofit-client__link" href="#">Buy now!</a>
 					<div class="biofit-client__link_text">
@@ -68,6 +159,7 @@
 		</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>

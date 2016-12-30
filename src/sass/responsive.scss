@@ -2,7 +2,34 @@
 	.container{
 		max-width: 320px;
 	}
+	.bread-crumbs{
+		display: none;
+	}
+	/* MOBILE MENU */
+	.mobile-menu{
+		display: none;
+		background: #fff;
+		width: 100%;
+		position: absolute;
+		z-index: 20;
+		top: 69px;
+		height: 65%;
+		li{
+			border-bottom: 1px solid #ccc;
+			padding: 20px 0 20px 20px;
+			&:first-child{
+				border-top: 1px solid green;
+			}
+			a{
+				color: #3e3e3e;
+				font-size: 14px;
+			}
 
+		}
+		&__mar{
+				margin-right: 15px
+			}
+	}
 	/* MAIN-1 */
 	.title-descr{
 		margin: 25px auto 0;
@@ -51,6 +78,15 @@
 		}
 		.main-2 .map {
     		margin-top: 25px;
+    		img{
+    			width: 100%;
+    		}
+		}
+		.map-desk{
+			display: none;
+		}
+		.map-mobile{
+			display: block;
 		}
 	}
 	.mobile-img{
@@ -132,19 +168,100 @@
 		}
 	}
 	/* CHOISE */
-	/* .banner{
-		display: none;
-	} */
-	.banner-mobile{
-		background: url(../img/banner-mobile.jpg);
-		height: 200px;
-	}
 	.choise{
 		padding: 25px 0 100px;
+		
+	}
+	.banner{
+		border-top: 1px solid #ccc;
+		margin-top: 70px;
+		background: url(../img/banner-mobile.jpg) no-repeat;
+		height: 200px;
+		background-size: 100%;
+		&__title{
+			display: none;
+		}
+		&__text{
+			display: none;
+		}
+	}
+	.nav{
+		display: none;
 	}
 	.choise__item{
 		padding: 0;
 	}
+	.header__right{
+		display: none;
+	}
+	.search{
+		display: flex;
+		margin-left: -50px;
+	}
+	.search:hover input{
+		width: 100px;
+	}
+	.header{
+		justify-content: space-around;
+		&__basket{
+			padding: 0;
+		}
+	}
+	.burger{
+    				display: block;
+    			 cursor: pointer;
+
+    			&__item{
+				    position: relative;
+				    overflow: hidden;
+				    width: 10px;
+				    height: 18px;
+				    font-size: 0;
+				    text-indent: -9999px;
+				    -webkit-appearance: none;
+				    -moz-appearance: none;
+				    appearance: none;
+				    box-shadow: none;
+				    border-radius: none;
+				    border: none;
+				    background: none;
+    			}
+
+    			&__upper{
+			         display: block;
+			         position: absolute;
+			         top: 3px;
+			         width: 100%;
+			         left: 0px;
+			         right: 0px;
+			         height: 2px;
+			         background: #ccc;
+
+			    }
+			    .cliked{
+			     	background: #009247;
+			   	}
+			    &__mid{
+			         display: block;
+			         position: absolute;
+			         top: 8px;
+			         left: 0px;
+			         right: 0px;
+			         height: 2px;
+			         background: #ccc;
+			       }
+			    &__lower{
+			          display: block;
+			         position: absolute;
+			         top: 13px;
+			         left: 0px;
+			         right: 0px;
+			         height: 2px;
+			         background: #ccc;
+			    }
+
+    		}
+		
 	.slick-dots li button{
 		border: 3px solid #e1e1e0;
 		height: 13px;
@@ -157,32 +274,51 @@
 	.slick-dots{
 		bottom: -45px;
 	}
+
 	/* BIOFIT CLIENT */
 	.biofit-client{
 		border: none;
 		padding: 0 20px;
+		margin-top: 0;
 		&__left{
-			margin: 0;
+			margin: 11px 0 0;
 			border-bottom: 1px solid #ccc;
+			border-top: 1px solid #ccc;
 		}
 		&__right{
 			padding: 0;
 			border: none;
 			border-bottom: 1px solid #ccc;
 			width: 300px;
+			img{
+				width: 300px;
+			}
 		}
 		&__link_text{
 			margin-left: 10px;
 		}
+		&__dose{
+			img{
+				max-width: 100%;
+				height: auto;
+			}
+		}
+		&__link--cart{
+			margin-top: 50px;
+		}
 	}
 	.biofit-client-2{
 		padding: 0 20px;
+		margin: 30px 0;
 	}
 	/* BIOFFIT ITEM CARD */
 	.biofit-item-card{
+		border-top: 1px solid #ccc;
+		margin-top: 69px;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		padding: 0 20px;
 		&__left{
 			max-width: 743px;
 			width: 100%;
@@ -194,9 +330,17 @@
 			width: 100%;
 			margin-top: 100%;
 		}
-		&__img{
+		&__title{
 			position: absolute;
 			top: 0;
+		}
+		&__sub-title{
+			position: absolute;
+			top: 38px;
+		}
+		&__img{
+			position: absolute;
+			top: 72px;
 			img{
 				max-width: 100%;
 				height: auto;
@@ -209,4 +353,49 @@
 		flex-wrap: wrap;
 		flex-direction: column-reverse;
 	}
+	/* BIOFFIT CLIENT PAYMENT */
+	.order{
+		margin-top: 69px;
+		border-top: 1px solid #ccc;
+		.order-right{
+			padding: 0 10px;
+			float: none;
+			width: 300px;
+			clear: both;
+			padding-top: 1px;
+			&__pad{
+				padding: 0;
+		}
+		
+	}
+	.order-left{
+			padding: 0 3 20px;
+			border-right: none ;
+			border-bottom: 1px solid #ccc;
+			padding-bottom: 20px;
+			&__input{
+				max-width: 370px;
+				width: 63%;
+				margin: 0 10px 10px 10px;
+			}
+			&__title{
+				margin: 0;
+			}
+	}
+
+}
+	.cost-product{
+			padding: 0 10px;
+			margin: 25px 0 25px;
+			&__next{
+				margin: 25px 0 ;
+			}
+			&__next-text{
+				padding: 0 0 15px 0;
+			}
+
+		}
+	.mobile-pos-right{
+			margin-right: 35%;
+		}	
 }
