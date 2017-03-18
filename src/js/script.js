@@ -9,8 +9,12 @@
 	};
 });
 console.log(1)*/
- 
-$(function(){
+
+
+
+
+$(document).ready(function(){
+		
 	var burgerItem = $(".burger__upper, .burger__mid, .burger__lower");
  		var menu = $(".mobile-menu");
  		var burger = $('.burger');
@@ -18,9 +22,9 @@ $(function(){
 	 	burger.on("click", function(){
 	  	menu.fadeToggle();
 	  	burgerItem.toggleClass('cliked'); 
- 		})	
+ 	});
 
-
+$('.header__select').styler();
 
 	var $itemFirst = $(".itemfirst");
 	var $itemSecond = $(".itemsecond");
@@ -55,48 +59,52 @@ $(function(){
 		$imgThird.css({"top": "72%", "height" : "26%", "margin-top": "3px"});
 		$(".hide-text-t").css("display", "none");
 	});
-$('.header__select').styler();
+
+
+	
 
 	/*validation*/
-	$("#form").validate({
-		rules:{
-			firstname: {
-				required: true,
-				minlength: 6
-			},
-			surname: {
-				required: true,
-				minlength: 6
-			},
-			country: {
-				required: true,
-				minlength: 2
-			},
-			city: {
-				required: true,
-				minlength: 2
-			},
-			postcode: {
-				required: true,
-				minlength: 2
-			},
-			street: {
-				required: true,
-				minlength: 2
-			},
-			email: {
-				required: true,
-				email: true,
-				minlength: 2
-			}
-		},
-		messages:{
-			firstname: "Please enter a valid your firstname"
-		}
-	});
+	// $("#form").validate({
+	// 	rules:{
+	// 		firstname: {
+	// 			required: true,
+	// 			minlength: 6
+	// 		},
+	// 		surname: {
+	// 			required: true,
+	// 			minlength: 6
+	// 		},
+	// 		country: {
+	// 			required: true,
+	// 			minlength: 2
+	// 		},
+	// 		city: {
+	// 			required: true,
+	// 			minlength: 2
+	// 		},
+	// 		postcode: {
+	// 			required: true,
+	// 			minlength: 2
+	// 		},
+	// 		street: {
+	// 			required: true,
+	// 			minlength: 2
+	// 		},
+	// 		email: {
+	// 			required: true,
+	// 			email: true,
+	// 			minlength: 2
+	// 		}
+	// 	},
+	// 	messages:{
+	// 		firstname: "Please enter a valid your firstname"
+	// 	}
+	// });
+
 	
 })
-	$(".kind__body").slick({
+
+	$(".kind-slider").slick({
 		responsive: [
 		    {
 		      breakpoint: 743,
@@ -126,4 +134,4 @@ $('.header__select').styler();
 	})
 
 
-		
+	

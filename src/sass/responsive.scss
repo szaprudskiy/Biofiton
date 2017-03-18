@@ -36,7 +36,12 @@
 	}
 	.kind__body{
 		padding: 0px 50px;
+		display: none;
 	}
+	.kind-slider{
+		display: block !important;
+	}
+	
 	.slick-dotted.slick-slider{
 		margin-bottom: -15px;
 	}
@@ -307,6 +312,12 @@
 			margin-top: 50px;
 		}
 	}
+	.choice-slider{
+		display: block !important;
+	}
+	.choise__top{
+		display: none;
+	}
 	.biofit-client-2{
 		padding: 0 20px;
 		margin: 30px 0;
@@ -329,6 +340,9 @@
 			max-width: 743px;
 			width: 100%;
 			margin-top: 100%;
+		}
+		&__dose-img{
+			width: 100%;
 		}
 		&__title{
 			position: absolute;

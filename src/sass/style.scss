@@ -74,7 +74,10 @@ html, body{
 	display: none;
 }
 .choice-slider{
-	display: none;
+	display: none !important;
+}
+.kind-slider{
+	display: none !important;
 }
 .container{
 	width: 100%;
@@ -894,6 +897,10 @@ html, body{
 		clear: both;
 		margin-top: 110px;
 	}
+	&__dose-img{
+		max-width: 100%;
+		height: auto;
+	}
 	&__description{
 		margin: 40px 0 0 40px;
 		&_title{
@@ -1009,11 +1016,23 @@ html, body{
 		width: 55px;
 		height: 55px;
 	}
+	&__in{
+		&:hover{
+			background: url(../img/in-hover.png) no-repeat;
+		}
+	}
 	&__facebook{
 		background-position: -75px 0;
+		&:hover{
+			background: url(../img/fsb-hover.png) no-repeat;
+
+		}
 	}
 	&__inst{
 		background-position: -150px 0;
+		&:hover{
+			background: url(../img/inst-hover.png) no-repeat;
+		}
 	}
 	&__copy{
 		padding-top: 86px;
